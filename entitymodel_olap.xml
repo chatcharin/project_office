@@ -222,6 +222,9 @@ under the License.
             <exclude field="initialReferrer"/>
             <exclude field="productPromoCode"/>
             <exclude field="categoryName"/>
+            <exclude field="customerId"/>
+            <exclude field="productSKU"/>
+            <exclude field="productPrice"/>
         </alias-all>
         <alias entity-alias="SOIF" name="orderId" group-by="true">
             <description>Order id</description>
@@ -236,6 +239,9 @@ under the License.
         <alias entity-alias="SOIF" name="initialReferrer" group-by="true"/>
         <alias entity-alias="SOIF" name="productPromoCode" group-by="true"/>
         <alias entity-alias="SOIF" name="categoryName" group-by="true"/>
+        <alias entity-alias="SOIF" name="customerId" group-by="true"/>
+        <alias entity-alias="SOIF" name="productSKU" group-by="true"/>
+        <alias entity-alias="SOIF" name="productPrice" group-by="true"/>
 
         <view-link entity-alias="SOIF" rel-entity-alias="ODD">
             <key-map field-name="orderDateDimId" rel-field-name="dimensionId"/>
