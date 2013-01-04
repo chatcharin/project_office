@@ -350,11 +350,25 @@ under the License.
                 <clear-field field="fact.categoryName"/>
                 <entity-one entity-name="Product" value-field="product">
                     <field-map field-name="productId" from-field="orderItem.productId"/>
+                </entity-one> 
+                <entity-and entity-name="OrderRole" list="orderrole">
+                    <field-map field-name="orderId" from-field="orderItem.orderId"/>
+                </entity-and>
+                <iterate list="orderrole" entry="orderrole">
+                        <if-compare field="orderrole.roleTypeId" operator="equals" value="END_USER_CUSTOMER">
+                    	<set field="fact.customerId" from-field="orderrole.partyId"/>
+                	</if-compare>
+                </iterate>
+                <entity-one entity-name="ProductPrice" value-field="productprice">
+                    <field-map field-name="productId" from-field="product.productId"/>
                 </entity-one>
+                <set field="fact.productPrice" from-field="orderItem.unitListPrice"/>
+                <set field="fact.productSKU" from-field="product.productSKU"/>
                 <entity-one entity-name="ProductCategory" value-field="productcategory">
                     <field-map field-name="productCategoryId" from-field="product.primaryProductCategoryId"/>
-                </entity-one>       
+                </entity-one>     
                 <set field="fact.categoryName" from-field="productcategory.categoryName"/>
+                
                 <if-empty field="fact.categoryName">
                       <entity-one entity-name="ProductCategory" value-field="productcategory2">
                          <field-map field-name="productCategoryId" from-field="productcategory.primaryParentCategoryId"/>
@@ -373,12 +387,12 @@ under the License.
                       </entity-one>
                       <set field="fact.categoryName" from-field="productcategory4.categoryName"/>
                 </if-empty>
-                 <if-empty field="fact.categoryName">
-                      <entity-one entity-name="ProductCategory" value-field="productcategory5">
-                         <field-map field-name="productCategoryId" from-field="productcategory4.primaryParentCategoryId"/>
+                <if-empty field="fact.categoryName">
+                       <entity-one entity-name="ProductCategory" value-field="productcategory5">
+                          <field-map field-name="productCategoryId" from-field="productcategory4.primaryParentCategoryId"/>
                       </entity-one>
-                      <set field="fact.categoryName" from-field="productcategory5.categoryName"/>
-                </if-empty>
+                      <set field="fact.categoryName" value="Test" type="String"/>
+                </if-empty> 
             </if-not-empty>
             <store-value value-field="fact"/>
         </if-compare>
