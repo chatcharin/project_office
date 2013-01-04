@@ -76,29 +76,32 @@
     <PortalPageColumn portalPageId="OrderReportPage" columnSeqId="00001" columnWidthPercentage="50"/>
     <PortalPageColumn portalPageId="OrderReportPage" columnSeqId="00002"/>
 
-    <PortalPortlet portalPortletId="SalesByStore"
-        portletName="Sales by store report"
-        screenName="OrderReportSalesByStore"
+    <PortalPortlet portalPortletId="TransactionReports"
+        portletName="Transaction Reports"
+        screenName="TransactionReports"
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
-    <PortletPortletCategory portalPortletId="SalesByStore" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesByStore" portletSeqId="00001" columnSeqId="00001" sequenceNum="0"/>
+    <PortletPortletCategory portalPortletId="TransactionReports" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="TransactionReports" portletSeqId="00001" columnSeqId="00001" sequenceNum="0"/>
 
-    <PortalPortlet portalPortletId="OpenOrderItems"
-        portletName="Order Report Open OrderItems"
-        screenName="OrderReportOpenOrderItems"
-        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
-        description=""/>
-    <PortletPortletCategory portalPortletId="OpenOrderItems" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OpenOrderItems" portletSeqId="00001" columnSeqId="00001" sequenceNum="1"/>
 
-    <PortalPortlet portalPortletId="PurchasesByOrg"
-        portletName="Order Report Purchases By Organization"
-        screenName="OrderReportPurchasesByOrganization"
+    <PortalPortlet portalPortletId="DailyGrossSales"
+        portletName="Daily Gross Sales - All Shops"
+        screenName="DailyGrossSales"
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
-    <PortletPortletCategory portalPortletId="PurchasesByOrg" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByOrg" portletSeqId="00001" columnSeqId="00001" sequenceNum="2"/>
+    <PortletPortletCategory portalPortletId="DailyGrossSales" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="DailyGrossSales" portletSeqId="00001" columnSeqId="00001" sequenceNum="1"/>
+
+   
+
+    <PortalPortlet portalPortletId="CatalogShare"
+        portletName="Catalog Share Report"
+        screenName="CatalogShare"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="CatalogShare" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="CatalogShare" portletSeqId="00001" columnSeqId="00001" sequenceNum="2"/>
 
     <PortalPortlet portalPortletId="PurchasesByProduct"
         portletName="Order Report Purchases By Product"
@@ -186,5 +189,27 @@
         description=""/>
     <PortletPortletCategory portalPortletId="PDR_Report" portletCategoryId="REPORT"/>
     <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PDR_Report" portletSeqId="00001" columnSeqId="00002" sequenceNum="12"/>
+      <PortalPortlet portalPortletId="SalesByStore"
+        portletName="Sales by store report"
+        screenName="OrderReportSalesByStore"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="SalesByStore" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesByStore" portletSeqId="00001" columnSeqId="00001" sequenceNum="13"/>
 
+    <PortalPortlet portalPortletId="OpenOrderItems"
+        portletName="Order Report Open OrderItems"
+        screenName="OrderReportOpenOrderItems"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="OpenOrderItems" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OpenOrderItems" portletSeqId="00001" columnSeqId="00001" sequenceNum="14"/>
+
+    <PortalPortlet portalPortletId="PurchasesByOrg"
+        portletName="Order Report Purchases By Organization"
+        screenName="OrderReportPurchasesByOrganization"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="PurchasesByOrg" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByOrg" portletSeqId="00001" columnSeqId="00001" sequenceNum="15"/>
 </entity-engine-xml>
