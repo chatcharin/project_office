@@ -1,0 +1,1006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<report xmlns="http://www.eclipse.org/birt/2005/design" version="3.2.15" id="1">
+    <property name="createdBy">Eclipse BIRT Designer Version 2.2.1.r221_v20070924 Build &lt;2.2.0.v20070924-1550></property>
+    <property name="units">in</property>
+    <property name="comments">Copyright (c) 2007 &lt;&lt;Your Company Name here>></property>
+    <html-property name="description">Creates a blank report with no predefined content.</html-property>
+    <list-property name="userProperties">
+        <structure>
+            <property name="name">BIC_DataCube.BIC.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.BIC.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.Account.NewTabularHierarchy1.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.Account.NewTabularHierarchy1.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.BIC.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.BIC.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.Account.NewTabularHierarchy1.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">BIC_DataCube.Account.NewTabularHierarchy1.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.Account.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.Account.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.Account.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.Account.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.width</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.height</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">Data Cube.BIC.x</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+        <structure>
+            <property name="name">Data Cube.BIC.y</property>
+            <property name="type">integer</property>
+            <property name="isVisible">false</property>
+        </structure>
+    </list-property>
+    <property name="BIC_DataCube.BIC.x">284</property>
+    <property name="BIC_DataCube.BIC.y">29</property>
+    <property name="BIC_DataCube.Account.NewTabularHierarchy1.x">70</property>
+    <property name="BIC_DataCube.Account.NewTabularHierarchy1.y">35</property>
+    <property name="BIC_DataCube.BIC.width">150</property>
+    <property name="BIC_DataCube.BIC.height">200</property>
+    <property name="BIC_DataCube.Account.NewTabularHierarchy1.width">150</property>
+    <property name="BIC_DataCube.Account.NewTabularHierarchy1.height">200</property>
+    <property name="SaleOrder_DataCube.Account.x">280</property>
+    <property name="SaleOrder_DataCube.Account.y">17</property>
+    <property name="SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.x">32</property>
+    <property name="SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.y">39</property>
+    <property name="SaleOrder_DataCube.Account.width">150</property>
+    <property name="SaleOrder_DataCube.Account.height">200</property>
+    <property name="SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.width">150</property>
+    <property name="SaleOrder_DataCube.DateGroup.NewTabularHierarchy3.height">200</property>
+    <property name="Data Cube.BIC.x">135</property>
+    <property name="Data Cube.BIC.y">80</property>
+    <method name="beforeFactory"><![CDATA[internalGroupCount = 0;
+oldgroup = "";]]></method>
+    <text-property name="displayName">Blank Report</text-property>
+    <property name="iconFile">/templates/blank_report.gif</property>
+    <parameters>
+        <scalar-parameter name="fromDate" id="310">
+            <property name="valueType">static</property>
+            <property name="dataType">date</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+        <scalar-parameter name="thruDate" id="311">
+            <property name="valueType">static</property>
+            <property name="dataType">date</property>
+            <property name="paramType">simple</property>
+            <property name="isRequired">false</property>
+            <property name="controlType">text-box</property>
+            <property name="distinct">true</property>
+            <structure name="format">
+                <property name="category">Unformatted</property>
+            </structure>
+        </scalar-parameter>
+    </parameters>
+    <data-sources>
+        <script-data-source name="OFbiz" id="6"/>
+    </data-sources>
+    <data-sets>
+        <script-data-set name="BIC" id="7">
+            <list-property name="resultSetHints">
+                <structure>
+                    <property name="position">1</property>
+                    <property name="name">orderDateYearName</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">2</property>
+                    <property name="name">orderDateMonthOfYear</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">3</property>
+                    <property name="name">orderDateMonthName</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">4</property>
+                    <property name="name">orderDateWeekOfYear</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">5</property>
+                    <property name="name">orderDateDayName</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">6</property>
+                    <property name="name">orderDateDescription</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">7</property>
+                    <property name="name">quantity</property>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="position">8</property>
+                    <property name="name">GrossSales</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">9</property>
+                    <property name="name">GrossMerchandizeSales</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">10</property>
+                    <property name="name">GrossMerchandizeProfit</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">11</property>
+                    <property name="name">GrossShippingProfit</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">12</property>
+                    <property name="name">GrossProfit</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">13</property>
+                    <property name="name">AverageMerchandizeProfit</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">14</property>
+                    <property name="name">AverageGrossProfit</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">15</property>
+                    <property name="name">AccountType</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">16</property>
+                    <property name="name">Pod</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">17</property>
+                    <property name="name">Account</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">18</property>
+                    <property name="name">SalesChannel</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">19</property>
+                    <property name="name">Category</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">20</property>
+                    <property name="name">salesChannelEnumId</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">21</property>
+                    <property name="name">orderId</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">22</property>
+                    <property name="name">partyId</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">23</property>
+                    <property name="name">orderItemSeqId</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">24</property>
+                    <property name="name">productSKU</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">25</property>
+                    <property name="name">productprice</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">26</property>
+                    <property name="name">note</property>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="position">27</property>
+                    <property name="name">extDiscountAmount</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">28</property>
+                    <property name="name">extGrossAmount</property>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="position">29</property>
+                    <property name="name">orderDate</property>
+                    <property name="dataType">date-time</property>
+                </structure>
+            </list-property>
+            <list-property name="columnHints">
+                <structure>
+                    <property name="columnName">quantity</property>
+                    <property name="displayName">quantity</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateMonthName</property>
+                    <property name="displayName">orderDateMonthName</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateDayName</property>
+                    <property name="displayName">orderDateDayName</property>
+                </structure>
+                <structure>
+                    <property name="columnName">GrossSales</property>
+                    <property name="displayName">GS</property>
+                </structure>
+                <structure>
+                    <property name="columnName">GrossMerchandizeSales</property>
+                    <property name="displayName">GMS</property>
+                </structure>
+                <structure>
+                    <property name="columnName">GrossMerchandizeProfit</property>
+                    <property name="displayName">GMP</property>
+                </structure>
+                <structure>
+                    <property name="columnName">GrossShippingProfit</property>
+                    <property name="displayName">GSP</property>
+                </structure>
+                <structure>
+                    <property name="columnName">GrossProfit</property>
+                    <property name="displayName">GP</property>
+                </structure>
+                <structure>
+                    <property name="columnName">AverageMerchandizeProfit</property>
+                    <property name="displayName">AMP</property>
+                </structure>
+                <structure>
+                    <property name="columnName">AverageGrossProfit</property>
+                    <property name="displayName">AGP</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateWeekOfYear</property>
+                    <property name="displayName">orderDateWeekOfYear</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateDescription</property>
+                    <property name="displayName">orderDateDescription</property>
+                </structure>
+                <structure>
+                    <property name="columnName">AccountType</property>
+                    <property name="displayName">AccountType</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Pod</property>
+                    <property name="displayName">Pod</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Account</property>
+                    <property name="displayName">Account</property>
+                </structure>
+                <structure>
+                    <property name="columnName">SalesChannel</property>
+                    <property name="displayName">Pod</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateYearName</property>
+                    <property name="displayName">orderDateYearName</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDateMonthOfYear</property>
+                    <property name="displayName">Shop Name</property>
+                </structure>
+                <structure>
+                    <property name="columnName">Category</property>
+                    <property name="displayName">Category</property>
+                </structure>
+                <structure>
+                    <property name="columnName">salesChannelEnumId</property>
+                    <property name="displayName">Shop ID</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderId</property>
+                    <property name="displayName">Transaction</property>
+                </structure>
+                <structure>
+                    <property name="columnName">partyId</property>
+                    <property name="displayName">Customer ID</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderItemSeqId</property>
+                    <property name="displayName">Line#</property>
+                </structure>
+                <structure>
+                    <property name="columnName">productSKU</property>
+                    <property name="displayName">SKU</property>
+                </structure>
+                <structure>
+                    <property name="columnName">productprice</property>
+                    <property name="displayName">U/P</property>
+                </structure>
+                <structure>
+                    <property name="columnName">note</property>
+                    <property name="displayName">Note</property>
+                </structure>
+                <structure>
+                    <property name="columnName">extDiscountAmount</property>
+                    <property name="displayName">Discounted</property>
+                </structure>
+                <structure>
+                    <property name="columnName">extGrossAmount</property>
+                    <property name="displayName">T/P</property>
+                </structure>
+                <structure>
+                    <property name="columnName">orderDate</property>
+                    <property name="displayName">Time</property>
+                </structure>
+            </list-property>
+            <structure name="cachedMetaData">
+                <list-property name="resultSet">
+                    <structure>
+                        <property name="position">1</property>
+                        <property name="name">orderDateYearName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">2</property>
+                        <property name="name">orderDateMonthOfYear</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">3</property>
+                        <property name="name">orderDateMonthName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">4</property>
+                        <property name="name">orderDateWeekOfYear</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">5</property>
+                        <property name="name">orderDateDayName</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">6</property>
+                        <property name="name">orderDateDescription</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">7</property>
+                        <property name="name">quantity</property>
+                        <property name="dataType">integer</property>
+                    </structure>
+                    <structure>
+                        <property name="position">8</property>
+                        <property name="name">GrossSales</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">9</property>
+                        <property name="name">GrossMerchandizeSales</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">10</property>
+                        <property name="name">GrossMerchandizeProfit</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">11</property>
+                        <property name="name">GrossShippingProfit</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">12</property>
+                        <property name="name">GrossProfit</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">13</property>
+                        <property name="name">AverageMerchandizeProfit</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">14</property>
+                        <property name="name">AverageGrossProfit</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">15</property>
+                        <property name="name">AccountType</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">16</property>
+                        <property name="name">Pod</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">17</property>
+                        <property name="name">Account</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">18</property>
+                        <property name="name">SalesChannel</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">19</property>
+                        <property name="name">Category</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">20</property>
+                        <property name="name">salesChannelEnumId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">21</property>
+                        <property name="name">orderId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">22</property>
+                        <property name="name">partyId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">23</property>
+                        <property name="name">orderItemSeqId</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">24</property>
+                        <property name="name">productSKU</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">25</property>
+                        <property name="name">productprice</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">26</property>
+                        <property name="name">note</property>
+                        <property name="dataType">string</property>
+                    </structure>
+                    <structure>
+                        <property name="position">27</property>
+                        <property name="name">extDiscountAmount</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">28</property>
+                        <property name="name">extGrossAmount</property>
+                        <property name="dataType">decimal</property>
+                    </structure>
+                    <structure>
+                        <property name="position">29</property>
+                        <property name="name">orderDate</property>
+                        <property name="dataType">date-time</property>
+                    </structure>
+                </list-property>
+            </structure>
+            <property name="dataSource">OFbiz</property>
+            <method name="open"><![CDATA[importPackage(Packages.org.ofbiz.minilang)
+importPackage(Packages.org.ofbiz.minilang.method)
+importPackage(Packages.org.ofbiz.base.util)
+importPackage(Packages.org.eclipse.birt.report.engine.api)
+
+appContext = reportContext.getAppContext();
+classLoader = appContext.get(EngineConstants.APPCONTEXT_CLASSLOADER_KEY);
+starschemas = null;
+try 
+{
+    fromDate = params["fromDate"].value;
+    thruDate = params["thruDate"].value;
+    methodinit = new MethodContext(appContext, classLoader, MethodContext.SERVICE);
+    methodinit.putEnv("fromDate", fromDate);
+    methodinit.putEnv("thruDate", thruDate);
+    SimpleMethod.runSimpleMethod("component://order/script/org/ofbiz/order/reports/SalesReportEvent.xml", "getSalesOrderItemFacts", methodinit);
+} 
+catch (e) 
+{
+    Debug.logError(e,"method init =================== ");
+}
+
+
+try 
+{
+    fromDate = params["fromDate"].value;
+    thruDate = params["thruDate"].value;
+    methodContext = new MethodContext(appContext, classLoader, MethodContext.SERVICE);
+    methodContext.putEnv("fromDate", fromDate);
+    methodContext.putEnv("thruDate", thruDate);
+    
+
+    
+    
+    SimpleMethod.runSimpleMethod("component://order/script/org/ofbiz/order/reports/SalesReportEvent.xml", "getOrder", methodContext);
+    starschemas = methodContext.getEnv("starschemas");
+} 
+catch (e) 
+{
+    Debug.logError(e,"");
+}
+
+currentRow = 0;
+totalRows = 0;
+account_type1 = "B2C";
+account_type2 = "B2B";
+pod1 = "English Pod";
+pod2 = "Latin Pod";
+account_B2C_AU = "B2C-AU";
+account_B2C_CA = "B2C-CA";
+account_B2C_IE = "B2C-IE";
+account_B2C_SG = "B2C-SG";
+account_B2C_UK = "B2C-UK";
+account_B2C_US = "B2C-US";
+account_B2C_DE = "B2C-DE";
+account_B2C_ES = "B2C-ES";
+account_B2C_FR = "B2C-FR";
+account_B2C_IT = "B2C-IT";
+account_B2B_AU = "B2B-AU";
+account_B2B_CA = "B2B-CA";
+account_B2B_IE = "B2B-IE";
+account_B2B_SG = "B2B-SG";
+account_B2B_UK = "B2B-UK";
+account_B2B_US = "B2B-US";
+account_B2B_DE = "B2B-DE";
+account_B2B_ES = "B2B-ES";
+account_B2B_FR = "B2B-FR";
+account_B2B_IT = "B2B-IT";
+
+if (starschemas) 
+{
+    totalRows = starschemas.size();
+}]]></method>
+            <method name="fetch"><![CDATA[if (currentRow >= totalRows - 1) return false;
+{
+    starschema = starschemas.get(currentRow);
+    orderDateDescription = starschema.getString("orderDateDescription");
+    orderDateDayName = starschema.getString("orderDateDayName");
+    orderDateDayOfMonth = starschema.getString("orderDateDayOfMonth");
+    orderDateMonthName = starschema.getString("orderDateMonthName");
+    orderDateYearName = starschema.getString("orderDateYearName");
+    orderDateWeekOfYear = starschema.getString("orderDateWeekOfYear");
+    orderDateYearMonthDay = starschema.getString("orderDateYearMonthDay");
+    orderDateMonthOfYear = starschema.getString("orderDateMonthOfYear");
+    
+    quantity = starschema.getString("quantity");
+    GrossSales = starschema.getString("GrossSales");
+    GrossMerchandizeSales = starschema.getString("GrossMerchandizeSales");
+    GrossMerchandizeProfit = starschema.getString("GrossMerchandizeProfit");
+    GrossShippingProfit = starschema.getString("GrossShippingProfit");
+    GrossProfit = starschema.getString("GrossProfit");
+    Category = starschema.getString("categoryName");
+    salesChannelEnumId = starschema.getString("salesChannelEnumId");
+    saleChannel = starschema.getString("saleChannel");
+    
+        row["AccountType"] = account_type1;
+        row["Pod"] = pod1;
+        row["Account"] = account_B2C_AU;
+        row["SalesChannel"] = salesChannelEnumId;
+        row["orderDateYearName"] = orderDateYearName;
+        row["orderDateMonthOfYear"] = orderDateMonthOfYear;
+        row["orderDateMonthName"] = orderDateMonthName;
+        row["orderDateWeekOfYear"] = orderDateWeekOfYear;
+        row["orderDateDayName"] = orderDateDayName;
+        row["orderDateDescription"] = orderDateDescription;
+        row["quantity"] = quantity;
+        row["GrossSales"] = GrossSales;
+        row["GrossMerchandizeSales"] = GrossMerchandizeSales;
+        row["GrossMerchandizeProfit"] = GrossMerchandizeProfit;
+        row["GrossShippingProfit"] = GrossShippingProfit;
+        row["GrossProfit"] = GrossProfit;
+        row["Category"] = Category;
+        row["salesChannelEnumId"] = starschema.getString("salesChannelEnumId");
+        row["orderId"] = starschema.getString("orderId");
+        row["partyId"] = starschema.getString("customerId");
+        row["orderItemSeqId"] = starschema.getString("orderItemSeqId"); 
+        row["productSKU"] = starschema.getString("productSKU"); 
+        row["productprice"] = starschema.getString("productPrice");        
+        row["note"] = starschema.getString("note");
+        row["extDiscountAmount"] = starschema.getString("extDiscountAmount");        
+        row["extGrossAmount"] = starschema.getString("extGrossAmount");
+        row["orderDate"] = starschema.getString("orderDateDateValue");  
+    currentRow ++;
+}
+
+return true;]]></method>
+        </script-data-set>
+    </data-sets>
+    <cubes>
+        <tabular-cube name="Data Cube" id="2127">
+            <property name="defaultMeasureGroup">Summary Field</property>
+            <property name="dimensions">
+                <tabular-dimension name="Group" id="2128">
+                    <property name="defaultHierarchy">NewTabularHierarchy</property>
+                    <property name="hierarchies">
+                        <tabular-hierarchy name="NewTabularHierarchy" id="2129">
+                            <property name="levels">
+                                <tabular-level name="Category" id="2130">
+                                    <property name="dataType">string</property>
+                                    <property name="columnName">Category</property>
+                                </tabular-level>
+                            </property>
+                        </tabular-hierarchy>
+                    </property>
+                </tabular-dimension>
+            </property>
+            <property name="measureGroups">
+                <tabular-measure-group name="Summary Field" id="2134">
+                    <property name="measures">
+                        <tabular-measure name="GrossSales" id="2135">
+                            <expression name="measureExpression">dataSetRow["GrossSales"]</expression>
+                            <property name="dataType">decimal</property>
+                        </tabular-measure>
+                    </property>
+                </tabular-measure-group>
+            </property>
+            <property name="dataSet">BIC</property>
+        </tabular-cube>
+    </cubes>
+    <styles>
+        <style name="NewStyle" id="176">
+            <property name="backgroundColor">#C0C0C0</property>
+            <property name="borderBottomStyle">solid</property>
+            <property name="borderLeftStyle">solid</property>
+            <property name="borderRightStyle">solid</property>
+            <property name="borderTopStyle">solid</property>
+        </style>
+    </styles>
+    <page-setup>
+        <simple-master-page name="Simple MasterPage" id="2">
+            <property name="type">a4</property>
+            <property name="orientation">portrait</property>
+            <property name="topMargin">0.25in</property>
+            <property name="leftMargin">0.25in</property>
+            <property name="bottomMargin">0.25in</property>
+            <property name="rightMargin">0.25in</property>
+            <page-footer>
+                <text id="3">
+                    <property name="contentType">html</property>
+                    <text-property name="content"><![CDATA[<value-of>new Date()</value-of>]]></text-property>
+                </text>
+            </page-footer>
+        </simple-master-page>
+    </page-setup>
+    <body>
+        <label id="2018">
+            <property name="fontSize">xx-large</property>
+            <property name="fontWeight">normal</property>
+            <property name="paddingTop">1pt</property>
+            <property name="paddingBottom">20pt</property>
+            <property name="textAlign">center</property>
+            <text-property name="text">Top - SKU</text-property>
+        </label>
+        <table id="2188">
+            <property name="width">100%</property>
+            <property name="dataSet">BIC</property>
+            <list-property name="boundDataColumns">
+                <structure>
+                    <property name="name">orderDateYearName</property>
+                    <expression name="expression">dataSetRow["orderDateYearName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDateMonthOfYear</property>
+                    <expression name="expression">dataSetRow["orderDateMonthOfYear"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDateMonthName</property>
+                    <expression name="expression">dataSetRow["orderDateMonthName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDateWeekOfYear</property>
+                    <expression name="expression">dataSetRow["orderDateWeekOfYear"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDateDayName</property>
+                    <expression name="expression">dataSetRow["orderDateDayName"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDateDescription</property>
+                    <expression name="expression">dataSetRow["orderDateDescription"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">quantity</property>
+                    <expression name="expression">dataSetRow["quantity"]</expression>
+                    <property name="dataType">integer</property>
+                </structure>
+                <structure>
+                    <property name="name">GrossSales</property>
+                    <expression name="expression">dataSetRow["GrossSales"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">GrossMerchandizeSales</property>
+                    <expression name="expression">dataSetRow["GrossMerchandizeSales"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">GrossMerchandizeProfit</property>
+                    <expression name="expression">dataSetRow["GrossMerchandizeProfit"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">GrossShippingProfit</property>
+                    <expression name="expression">dataSetRow["GrossShippingProfit"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">GrossProfit</property>
+                    <expression name="expression">dataSetRow["GrossProfit"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AverageMerchandizeProfit</property>
+                    <expression name="expression">dataSetRow["AverageMerchandizeProfit"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AverageGrossProfit</property>
+                    <expression name="expression">dataSetRow["AverageGrossProfit"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">AccountType</property>
+                    <expression name="expression">dataSetRow["AccountType"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Pod</property>
+                    <expression name="expression">dataSetRow["Pod"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Account</property>
+                    <expression name="expression">dataSetRow["Account"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">SalesChannel</property>
+                    <expression name="expression">dataSetRow["SalesChannel"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">Category</property>
+                    <expression name="expression">dataSetRow["Category"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">salesChannelEnumId</property>
+                    <expression name="expression">dataSetRow["salesChannelEnumId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderId</property>
+                    <expression name="expression">dataSetRow["orderId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">partyId</property>
+                    <expression name="expression">dataSetRow["partyId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">orderItemSeqId</property>
+                    <expression name="expression">dataSetRow["orderItemSeqId"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">productSKU</property>
+                    <expression name="expression">dataSetRow["productSKU"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">productprice</property>
+                    <expression name="expression">dataSetRow["productprice"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">note</property>
+                    <expression name="expression">dataSetRow["note"]</expression>
+                    <property name="dataType">string</property>
+                </structure>
+                <structure>
+                    <property name="name">extDiscountAmount</property>
+                    <expression name="expression">dataSetRow["extDiscountAmount"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">extGrossAmount</property>
+                    <expression name="expression">dataSetRow["extGrossAmount"]</expression>
+                    <property name="dataType">decimal</property>
+                </structure>
+                <structure>
+                    <property name="name">orderDate</property>
+                    <expression name="expression">dataSetRow["orderDate"]</expression>
+                    <property name="dataType">date-time</property>
+                </structure>
+                <structure>
+                    <property name="name">SumbySKU</property>
+                    <expression name="expression">dataSetRow["extGrossAmount"]</expression>
+                    <property name="dataType">decimal</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>SKU</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">SUM</property>
+                </structure>
+                <structure>
+                    <property name="name">Aggregation</property>
+                    <expression name="expression">row["SumbySKU"]</expression>
+                    <property name="dataType">integer</property>
+                    <simple-property-list name="aggregateOn">
+                        <value>SKU</value>
+                    </simple-property-list>
+                    <property name="aggregateFunction">RUNNINGSUM</property>
+                </structure>
+            </list-property>
+            <column id="2305">
+                <property name="width">1.40625in</property>
+            </column>
+            <column id="2227">
+                <property name="width">1.40625in</property>
+            </column>
+            <column id="2231">
+                <property name="width">1.6458333333in</property>
+            </column>
+            <column id="2234">
+                <property name="width">1.21875in</property>
+            </column>
+            <column id="2292"/>
+            <header>
+                <row id="2189">
+                    <cell id="2303"/>
+                    <cell id="2192">
+                        <label id="2301">
+                            <text-property name="text">Rank</text-property>
+                        </label>
+                    </cell>
+                    <cell id="2196">
+                        <label id="2248">
+                            <text-property name="text">SKU</text-property>
+                        </label>
+                    </cell>
+                    <cell id="2199">
+                        <label id="2255">
+                            <text-property name="text">Gross</text-property>
+                        </label>
+                    </cell>
+                    <cell id="2290"/>
+                </row>
+            </header>
+            <group id="2307">
+                <property name="groupName">SKU</property>
+                <property name="interval">prefix</property>
+                <property name="intervalRange">10.0</property>
+                <property name="sortDirection">asc</property>
+                <expression name="keyExpr">row["productSKU"]</expression>
+                <structure name="toc">
+                    <expression name="expressionValue">row["productSKU"]</expression>
+                </structure>
+                <property name="repeatHeader">true</property>
+                <property name="hideDetail">false</property>
+                <property name="pageBreakAfter">auto</property>
+                <property name="pageBreakBefore">auto</property>
+                <property name="pageBreakInside">auto</property>
+                <list-property name="sort">
+                    <structure>
+                        <expression name="key">row["SumbySKU"]</expression>
+                        <property name="direction">desc</property>
+                    </structure>
+                </list-property>
+                <footer>
+                    <row id="2314">
+                        <cell id="2315"/>
+                        <cell id="2316">
+                            <text-data id="2326">
+                                <expression name="valueExpr">internalGroupCount=internalGroupCount+1;
+internalGroupCount.toString()</expression>
+                                <property name="contentType">html</property>
+                            </text-data>
+                        </cell>
+                        <cell id="2317">
+                            <data id="2320">
+                                <property name="resultSetColumn">productSKU</property>
+                            </data>
+                        </cell>
+                        <cell id="2318">
+                            <data id="2325">
+                                <property name="resultSetColumn">SumbySKU</property>
+                            </data>
+                        </cell>
+                        <cell id="2319"/>
+                    </row>
+                </footer>
+            </group>
+        </table>
+    </body>
+</report>
