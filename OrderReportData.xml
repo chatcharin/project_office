@@ -84,6 +84,22 @@
     <PortletPortletCategory portalPortletId="TransactionReports" portletCategoryId="REPORT"/>
     <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="TransactionReports" portletSeqId="00001" columnSeqId="00001" sequenceNum="0"/>
 
+    <PortalPortlet portalPortletId="TopTenSKU"
+        portletName="Top 10 SKU"
+        screenName="TopTenSKU"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="TopTenSKU" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="TopTenSKU" portletSeqId="00001" columnSeqId="00002" sequenceNum="1"/>
+    
+    <PortalPortlet portalPortletId="MonthlySale"
+        portletName="Monthly Sale "
+        screenName="MonthlySale"
+        screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
+        description=""/>
+    <PortletPortletCategory portalPortletId="MonthlySale" portletCategoryId="REPORT"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="MonthlySale" portletSeqId="00001" columnSeqId="00002" sequenceNum="2"/>
+
 
     <PortalPortlet portalPortletId="DailyGrossSales"
         portletName="Daily Gross Sales - All Shops"
@@ -91,7 +107,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="DailyGrossSales" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="DailyGrossSales" portletSeqId="00001" columnSeqId="00001" sequenceNum="1"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="DailyGrossSales" portletSeqId="00001" columnSeqId="00001" sequenceNum="3"/>
 
    
 
@@ -101,7 +117,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="CatalogShare" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="CatalogShare" portletSeqId="00001" columnSeqId="00001" sequenceNum="2"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="CatalogShare" portletSeqId="00001" columnSeqId="00001" sequenceNum="4"/>
 
     <PortalPortlet portalPortletId="PurchasesByProduct"
         portletName="Order Report Purchases By Product"
@@ -109,7 +125,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="PurchasesByProduct" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByProduct" portletSeqId="00001" columnSeqId="00002" sequenceNum="3"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByProduct" portletSeqId="00001" columnSeqId="00002" sequenceNum="5"/>
 
     <PortalPortlet portalPortletId="PurchByPaymMeth"
         portletName="Order Report Purchases By PaymentMethod"
@@ -117,7 +133,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="PurchByPaymMeth" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchByPaymMeth" portletSeqId="00001" columnSeqId="00002" sequenceNum="4"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchByPaymMeth" portletSeqId="00001" columnSeqId="00002" sequenceNum="6"/>
     
     <PortalPortlet portalPortletId="ListPurchaseOrders"
         portletName="List Purchase Orders"
@@ -132,7 +148,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="OrderByReferrer" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderByReferrer" portletSeqId="00001" columnSeqId="00001" sequenceNum="5"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderByReferrer" portletSeqId="00001" columnSeqId="00001" sequenceNum="7"/>
     
     <PortalPortlet portalPortletId="OrderByChannel"
         portletName="Sale Orders by Channel"
@@ -140,7 +156,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="OrderByChannel" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderByChannel" portletSeqId="00001" columnSeqId="00001" sequenceNum="6"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderByChannel" portletSeqId="00001" columnSeqId="00001" sequenceNum="8"/>
     
     <PortalPortlet portalPortletId="OrderDiscountCode"
         portletName="Orders with discount code"
@@ -148,7 +164,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="OrderDiscountCode" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderDiscountCode" portletSeqId="00001" columnSeqId="00001" sequenceNum="7"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OrderDiscountCode" portletSeqId="00001" columnSeqId="00001" sequenceNum="9"/>
     
     <PortalPortlet portalPortletId="Last3MSalesReport"
         portletName="Last 3 Months Sales Report"
@@ -156,7 +172,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="Last3MSalesReport" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="Last3MSalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="8"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="Last3MSalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="10"/>
     
     <PortalPortlet portalPortletId="CouponSalesReport"
         portletName="Coupon Sales Report"
@@ -164,7 +180,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="CouponSalesReport" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="CouponSalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="9"/> 
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="CouponSalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="11"/> 
    
     <PortalPortlet portalPortletId="SalesReport"
         portletName="Sales Report"
@@ -172,7 +188,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="SalesReport" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="10"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesReport" portletSeqId="00001" columnSeqId="00002" sequenceNum="12"/>
    
     <PortalPortlet portalPortletId="NBO_Report"
         portletName="Net Before Overhead Report"
@@ -180,7 +196,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="NBO_Report" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="NBO_Report" portletSeqId="00001" columnSeqId="00002" sequenceNum="11"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="NBO_Report" portletSeqId="00001" columnSeqId="00002" sequenceNum="13"/>
 
     <PortalPortlet portalPortletId="PDR_Report"
         portletName="Product Demand Report"
@@ -188,14 +204,14 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="PDR_Report" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PDR_Report" portletSeqId="00001" columnSeqId="00002" sequenceNum="12"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PDR_Report" portletSeqId="00001" columnSeqId="00002" sequenceNum="14"/>
       <PortalPortlet portalPortletId="SalesByStore"
         portletName="Sales by store report"
         screenName="OrderReportSalesByStore"
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="SalesByStore" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesByStore" portletSeqId="00001" columnSeqId="00001" sequenceNum="13"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="SalesByStore" portletSeqId="00001" columnSeqId="00001" sequenceNum="15"/>
 
     <PortalPortlet portalPortletId="OpenOrderItems"
         portletName="Order Report Open OrderItems"
@@ -203,7 +219,7 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="OpenOrderItems" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OpenOrderItems" portletSeqId="00001" columnSeqId="00001" sequenceNum="14"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="OpenOrderItems" portletSeqId="00001" columnSeqId="00001" sequenceNum="16"/>
 
     <PortalPortlet portalPortletId="PurchasesByOrg"
         portletName="Order Report Purchases By Organization"
@@ -211,5 +227,5 @@
         screenLocation="component://order/widget/ordermgr/ReportScreens.xml"
         description=""/>
     <PortletPortletCategory portalPortletId="PurchasesByOrg" portletCategoryId="REPORT"/>
-    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByOrg" portletSeqId="00001" columnSeqId="00001" sequenceNum="15"/>
+    <PortalPagePortlet portalPageId="OrderReportPage" portalPortletId="PurchasesByOrg" portletSeqId="00001" columnSeqId="00001" sequenceNum="17"/>
 </entity-engine-xml>
